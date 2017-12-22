@@ -2,7 +2,7 @@
   "name": "boilerplate-nodejs-typescript",
   "version": "1.0.0",
   "description": "Basic boilerplate for NodeJS projects using TypeScript.",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "./bin/build",
     "dev": "./bin/dev",
@@ -29,6 +29,7 @@
     "dotenv": "^4.0.0"
   },
   "devDependencies": {
+    "@types/dotenv": "^4.0.2",
     "nodemon": "^1.14.3",
     "ts-node": "^4.0.2",
     "typescript": "^2.6.2"
