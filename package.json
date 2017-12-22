@@ -17,7 +17,7 @@
     "nodemon"
   ],
   "author": "Alexandre Pielucha",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/apielucha/boilerplate-nodejs-typescript/issues"
   },
