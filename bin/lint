@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./node_modules/.bin/tslint --project . --formatters-dir ./node_modules/tslint-formatter-beauty -t beauty && echo 'No linter errors.'

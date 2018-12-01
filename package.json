@@ -1,13 +1,17 @@
 {
   "name": "boilerplate-nodejs-typescript",
   "version": "1.0.0",
-  "description": "Basic boilerplate for NodeJS projects using TypeScript.",
-  "main": "build/index.js",
+  "description": "Boilerplate for NodeJS using Typescript.",
+  "main": "src/index.ts",
+  "package": "build/index.js",
   "scripts": {
     "build": "./bin/build",
     "dev": "./bin/dev",
+    "lint": "./bin/lint",
     "start": "./bin/start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "syntax": "./bin/lint && ./bin/types",
+    "test": "./bin/test",
+    "types": "./bin/types"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,10 @@
     "boilerplate",
     "nodejs",
     "typescript",
+    "babel",
+    "tslint",
+    "mocha",
+    "istanbul",
     "nodemon"
   ],
   "author": "Alexandre Pielucha",
@@ -25,13 +33,19 @@
     "url": "https://github.com/apielucha/boilerplate-nodejs-typescript/issues"
   },
   "homepage": "https://github.com/apielucha/boilerplate-nodejs-typescript#readme",
-  "dependencies": {
-    "dotenv": "^4.0.0"
-  },
   "devDependencies": {
-    "@types/dotenv": "^4.0.2",
-    "nodemon": "^1.14.3",
-    "ts-node": "^4.0.2",
-    "typescript": "^2.6.2"
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-typescript": "^7.1.0",
+    "nodemon": "^1.18.7",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-formatter-beauty": "^3.0.0",
+    "typescript": "^3.2.1"
   }
 }

@@ -1,3 +1,11 @@
+# Compiled files
+build/**/*.js
+
+# environment variables file
+.env
+.editorconfig
+
+
 # Created by https://www.gitignore.io/api/node
 
 # Logs
@@ -55,6 +63,3 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variables file
-.env
